@@ -1,0 +1,9 @@
+{
+  "name": "@ferimer/load_routes",
+  "version": "1.0.0",
+  "description": "Load Express Routes from a dictionary",
+  "main": "index.js",
+  "repository": "git@github.com:ferimer/node-load_routes.git",
+  "author": "Ferimer",
+  "license": "MIT"
+}
