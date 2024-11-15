@@ -2,8 +2,8 @@
 
 // Load routes (object) into express Router
 
-module.exports = (router, routes, base = '') => {
+module.exports = (router, routes, base = '', middlewares = []) => {
   Object.keys(routes).forEach(r => {
-    router.use(`${base}/${r}`, routes[r]);
+    router.use(`${base}/${r}`, ...middlewares, routes[r]);
   });
 };
